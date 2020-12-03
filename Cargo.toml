@@ -1,0 +1,18 @@
+[package]
+name = "imxrt-usb"
+version = "0.1.0"
+authors = ["Noah Kim <noahbkim@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+usb-device = "0.2.7"
+
+[dependencies.imxrt-ral]
+version = "0.4"
+git = "https://github.com/imxrt-rs/imxrt-ral"
+features = ["imxrt1062"]
+
+[dependencies.imxrt-iomuxc]
+version = "0.2.0"
+git = "https://github.com/imxrt-rs/imxrt-iomuxc.git"
+features = ["imxrt1060"]
